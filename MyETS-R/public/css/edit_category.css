@@ -1,0 +1,15 @@
+.div_dsgn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:40px;
+}
+
+h1{
+    color: white ;
+}
+
+input [type='text']{
+    height: 50px;
+    width: 45px;
+}
