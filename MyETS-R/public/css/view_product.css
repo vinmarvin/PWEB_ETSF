@@ -1,0 +1,40 @@
+.div_design{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.table_design{
+    border: 2px solid #5A2E0C;
+}
+
+th{
+    background-color:#c2c4c3 ;
+    color: #556B2F;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+td{
+    background-color: #647c74 ;
+    color: #FFFACD;
+    font-size: 13px;
+    border: 1px solid #8B4513;
+    text-align: center;
+}
+
+.btn.btn-danger{
+    color:#0a1a75 !important;
+    background-color:#c30101 !important ;
+    padding: 3px 8px; /* Mengurangi padding atas-bawah menjadi 5px dan kiri-kanan menjadi 10px */
+    font-size: 14px;
+}
+
+input[type='search']
+{
+   width: 450px;
+   height: 45px; 
+   margin-left: 40px;
+}

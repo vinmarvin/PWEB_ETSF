@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\Products;
 use App\Models\Category;
 
 class AdminController extends Controller
@@ -48,6 +48,59 @@ class AdminController extends Controller
         return redirect ('/view_cat');
     }
 
+    public function add_product(){
+        $category = Category::all();
+        return view('admin.add_product', compact('category'));
+    }
+
+    public function upload_product(Request $request){
+        $data = new Products;
+        $data->title = $request->p_title;
+        $data->desc = $request->description;
+        $data->price = $request->price;
+        $data->quantity = $request->qty;
+        $data->category = $request->category;
+        $image = $request->p_image;
+#request image from p_image
+        if($image){
+            $imagename = time().'.'. $image->getClientOriginalExtension();
+            #menggunakan time agar nama gambar selalu berbeda
+            $request->p_image->move('products', $imagename);
+
+            $data->image = $imagename;
+        }
+
+        $data -> save();
+        toastr()->closeButton()-> success('Produk telah Ditambahkan');
+        return redirect()->back();
+    }
+
+    public function view_product(){
+
+        $product_view = Products::paginate(3);
+        return view ('admin.view_product', compact('product_view'));
+    }
+
+    public function delete_product($id){
+        $item_saled = Products::find($id);
+        $image_path=public_path('products/'.$item_saled->image);
+        if(file_exists($image_path) && is_file($image_path)){
+            unlink($image_path); // Hapus file gambar
+        }
+
+        $item_saled->delete();
+        toastr()->closeButton()-> warning('Produk telah Dihapus');
+        return redirect()->back();
+    }
+
+    public function search_product (Request $request){
+        $searchproduct=$request->search;
+        $product_view = Products::where('title', 'LIKE', '%'.$searchproduct.'%')->orWhere('category', 'LIKE', '%'.$searchproduct.'%')->paginate(3);
+        return view('admin.view_product',compact('product_view'));
+    }
 
 }
+
+
+
 

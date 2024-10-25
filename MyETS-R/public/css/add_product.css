@@ -1,0 +1,50 @@
+.div_desgn {
+    display: flex;
+    flex-direction: column; /* Menyusun elemen secara vertikal */
+    justify-content: flex-start; /* Tetap berada di kiri */
+    align-items: flex-start; /* Mengatur elemen tetap di kiri */
+    margin-top: 50px;
+    padding: 15px;
+}
+
+label {
+    display: inline-block;
+    width: 150px; /* Lebar label tetap */
+    font-size: 15px !important;
+    color: blanchedalmond !important;
+    margin-right: 10px; /* Menambahkan margin untuk jarak */
+}
+
+input[type='text'], input[type='number'] {
+    width: 250px;
+    height: 35px;
+    margin-bottom: 15px; /* Tambahkan jarak antar elemen */
+}
+
+textarea {
+    width: 300px;
+    height: 80px;
+    margin-bottom: 15px;
+    vertical-align: middle; /* Menjaga agar tetap sejajar secara vertikal */
+}
+
+.btn-success {
+    background-color: #28a745; /* Warna lebih terang */
+    padding: 5px 10px; /* Ukuran tombol diperkecil */
+    font-size: 14px; /* Ukuran font juga diperkecil */
+}
+
+.btn-success:hover {
+    background-color: #207c34; /* Warna saat hover */
+}
+
+/* Flexbox untuk menyejajarkan label dan input */
+.form-group {
+    display: flex;
+    align-items: center; /* Menjaga agar label dan input sejajar secara vertikal */
+    margin-bottom: 15px; /* Jarak antar form-group */
+}
+
+.form-group textarea {
+    vertical-align: middle; /* Agar deskripsi sejajar dengan label */
+}

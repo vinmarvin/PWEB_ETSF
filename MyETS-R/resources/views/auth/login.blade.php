@@ -1,6 +1,22 @@
-<x-guest-layout>
+<!DOCTYPE html>
+<html>
+
+<head>
+  @include('home.css')
+</head>
+
+<body>
+  <div class="hero_area">
+        @include('home.header')
+  </div>
+
+  <x-guest-layout>
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
+
+    <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+    <img src="{{ asset('images/companylogo.png') }}" alt="Logo" style="width: 150px;">
+    </div>
 
     <form method="POST" action="{{ route('login') }}">
         @csrf
@@ -32,16 +48,32 @@
             </label>
         </div>
 
-        <div class="flex items-center justify-end mt-4">
+        <div class="flex items-center justify-between mt-4">
+            <a href="{{ route('register') }}" class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                {{ __('Belum memiliki akun?') }}
+            </a>
+
             @if (Route::has('password.request'))
                 <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('password.request') }}">
                     {{ __('Lupa Password?') }}
                 </a>
             @endif
+        </div>
 
+        <div class="flex items-center justify-end mt-4">
             <x-primary-button class="ms-3">
                 {{ __('Masuk') }}
             </x-primary-button>
         </div>
     </form>
-</x-guest-layout>
+  </x-guest-layout>
+  
+  <script src="{{asset('js/jquery-3.4.1.min.js')}}"></script>
+  <script src="{{asset('js/bootstrap.js')}}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <script src="{{asset('js/custom.js')}}"></script>
+
+</body>
+
+</html>

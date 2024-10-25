@@ -8,7 +8,7 @@
                 <div class="statistic-block block">
                   <div class="progress-details d-flex align-items-end justify-content-between">
                     <div class="title">
-                      <div class="icon"><i class="icon-user-1"></i></div><strong>New Clients</strong>
+                      <div class="icon"><i class="icon-user-1"></i></div><strong>Staff</strong>
                     </div>
                     <div class="number dashtext-1">27</div>
                   </div>
@@ -21,7 +21,7 @@
                 <div class="statistic-block block">
                   <div class="progress-details d-flex align-items-end justify-content-between">
                     <div class="title">
-                      <div class="icon"><i class="icon-contract"></i></div><strong>New Projects</strong>
+                      <div class="icon"><i class="icon-contract"></i></div><strong>Member</strong>
                     </div>
                     <div class="number dashtext-2">375</div>
                   </div>
@@ -34,7 +34,7 @@
                 <div class="statistic-block block">
                   <div class="progress-details d-flex align-items-end justify-content-between">
                     <div class="title">
-                      <div class="icon"><i class="icon-paper-and-pencil"></i></div><strong>New Invoices</strong>
+                      <div class="icon"><i class="icon-paper-and-pencil"></i></div><strong>Penjualan</strong>
                     </div>
                     <div class="number dashtext-3">140</div>
                   </div>
@@ -47,7 +47,7 @@
                 <div class="statistic-block block">
                   <div class="progress-details d-flex align-items-end justify-content-between">
                     <div class="title">
-                      <div class="icon"><i class="icon-writing-whiteboard"></i></div><strong>All Projects</strong>
+                      <div class="icon"><i class="icon-writing-whiteboard"></i></div><strong>Cabang</strong>
                     </div>
                     <div class="number dashtext-4">41</div>
                   </div>
@@ -170,60 +170,6 @@
                 </div>
               </div>
             </div>
-            <div class="public-user-block block">
-              <div class="row d-flex align-items-center">                   
-                <div class="col-lg-4 d-flex align-items-center">
-                  <div class="order">4th</div>
-                  <div class="avatar"> <img src="{{asset('adminui/img/avatar-1.jpg')}}" alt="..." class="img-fluid"></div><a href="#" class="name"><strong class="d-block">Tomas Hecktor</strong><span class="d-block">@tomhecktor</span></a>
-                </div>
-                <div class="col-lg-4 text-center">
-                  <div class="contributions">410 Contributions</div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="details d-flex">
-                    <div class="item"><i class="icon-info"></i><strong>110</strong></div>
-                    <div class="item"><i class="fa fa-gg"></i><strong>200</strong></div>
-                    <div class="item"><i class="icon-flow-branch"></i><strong>100</strong></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="public-user-block block">
-              <div class="row d-flex align-items-center">                   
-                <div class="col-lg-4 d-flex align-items-center">
-                  <div class="order">5th</div>
-                  <div class="avatar"> <img src="{{asset('adminui/img/avatar-2.jpg')}}" alt="..." class="img-fluid"></div><a href="#" class="name"><strong class="d-block">Alexander Shelby</strong><span class="d-block">@alexshelby</span></a>
-                </div>
-                <div class="col-lg-4 text-center">
-                  <div class="contributions">320 Contributions</div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="details d-flex">
-                    <div class="item"><i class="icon-info"></i><strong>150</strong></div>
-                    <div class="item"><i class="fa fa-gg"></i><strong>120</strong></div>
-                    <div class="item"><i class="icon-flow-branch"></i><strong>50</strong></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="public-user-block block">
-              <div class="row d-flex align-items-center">                   
-                <div class="col-lg-4 d-flex align-items-center">
-                  <div class="order">6th</div>
-                  <div class="avatar"> <img src="{{asset('adminui/img/avatar-3.jpg')}}" alt="..." class="img-fluid"></div><a href="#" class="name"><strong class="d-block">Arther Kooper</strong><span class="d-block">@artherkooper</span></a>
-                </div>
-                <div class="col-lg-4 text-center">
-                  <div class="contributions">170 Contributions</div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="details d-flex">
-                    <div class="item"><i class="icon-info"></i><strong>60</strong></div>
-                    <div class="item"><i class="fa fa-gg"></i><strong>70</strong></div>
-                    <div class="item"><i class="icon-flow-branch"></i><strong>40</strong></div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
         <section class="margin-bottom-sm">
@@ -231,7 +177,7 @@
             <div class="row d-flex align-items-stretch">
               <div class="col-lg-4">
                 <div class="stats-with-chart-1 block">
-                  <div class="title"> <strong class="d-block">Sales Difference</strong><span class="d-block">Lorem ipsum dolor sit</span></div>
+                  <div class="title"> <strong class="d-block">Jumlah Penjualan</strong><span class="d-block">Lorem ipsum dolor sit</span></div>
                   <div class="row d-flex align-items-end justify-content-between">
                     <div class="col-5">
                       <div class="text"><strong class="d-block dashtext-3">$740</strong><span class="d-block">May 2017</span><small class="d-block">320 Sales</small></div>
@@ -246,10 +192,10 @@
               </div>
               <div class="col-lg-4">   
                 <div class="stats-with-chart-1 block">
-                  <div class="title"> <strong class="d-block">Visit Statistics</strong><span class="d-block">Lorem ipsum dolor sit</span></div>
+                  <div class="title"> <strong class="d-block">Jumlah Pembeli</strong><span class="d-block">Lorem ipsum dolor sit</span></div>
                   <div class="row d-flex align-items-end justify-content-between">
                     <div class="col-4">
-                      <div class="text"><strong class="d-block dashtext-1">$457</strong><span class="d-block">May 2017</span><small class="d-block">210 Sales</small></div>
+                      <div class="text"><strong class="d-block dashtext-1">750</strong><span class="d-block">May 2017</span><small class="d-block">210 Pengunjung</small></div>
                     </div>
                     <div class="col-8">
                       <div class="bar-chart chart">
@@ -261,7 +207,7 @@
               </div>
               <div class="col-lg-4">
                 <div class="stats-with-chart-1 block">
-                  <div class="title"> <strong class="d-block">Sales Activities</strong><span class="d-block">Lorem ipsum dolor sit</span></div>
+                  <div class="title"> <strong class="d-block">Jumlah Barang</strong><span class="d-block">Lorem ipsum dolor sit</span></div>
                   <div class="row d-flex align-items-end justify-content-between">
                     <div class="col-5">
                       <div class="text"><strong class="d-block dashtext-2">80%</strong><span class="d-block">May 2017</span><small class="d-block">+35 Sales</small></div>
@@ -319,19 +265,19 @@
                         <div class="status online"></div>
                       </div>
                       <div class="content">   <strong class="d-block">Nadia Halsey</strong><span class="d-block">lorem ipsum dolor sit amit</span><small class="date d-block">9:30am</small></div></a><a href="#" class="message d-flex align-items-center">
-                      <div class="profile"><img src="img/avatar-2.jpg" alt="..." class="img-fluid">
+                      <div class="profile"><img src="{{asset('adminui/img/avatar-2.jpg')}}" alt="..." class="img-fluid">
                         <div class="status away"></div>
                       </div>
                       <div class="content">   <strong class="d-block">Peter Ramsy</strong><span class="d-block">lorem ipsum dolor sit amit</span><small class="date d-block">7:40am</small></div></a><a href="#" class="message d-flex align-items-center">
-                      <div class="profile"><img src="img/avatar-1.jpg" alt="..." class="img-fluid">
+                      <div class="profile"><img src="{{asset('adminui/img/avatar-1.jpg')}}" alt="..." class="img-fluid">
                         <div class="status busy"></div>
                       </div>
                       <div class="content">   <strong class="d-block">Sam Kaheil</strong><span class="d-block">lorem ipsum dolor sit amit</span><small class="date d-block">6:55am</small></div></a><a href="#" class="message d-flex align-items-center">
-                      <div class="profile"><img src="img/avatar-5.jpg" alt="..." class="img-fluid">
+                      <div class="profile"><img src="{{asset('adminui/img/avatar-4.jpg')}}" alt="..." class="img-fluid">
                         <div class="status offline"></div>
                       </div>
                       <div class="content">   <strong class="d-block">Sara Wood</strong><span class="d-block">lorem ipsum dolor sit amit</span><small class="date d-block">10:30pm</small></div></a><a href="#" class="message d-flex align-items-center">
-                      <div class="profile"><img src="img/avatar-1.jpg" alt="..." class="img-fluid">
+                      <div class="profile"><img src="{{asset('adminui/img/avatar-3.jpg')}}" alt="..." class="img-fluid">
                         <div class="status online"></div>
                       </div>
                       <div class="content">   <strong class="d-block">Nader Magdy</strong><span class="d-block">lorem ipsum dolor sit amit</span><small class="date d-block">9:47pm</small></div></a></div>
